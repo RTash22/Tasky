@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Tasky",
-    "slug": "Tasky",
+    "slug": "tasky",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -12,17 +12,32 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "platforms": ["ios", "android", "web"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rtash22.tasky"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rtash22.tasky",
+      "versionCode": 1,
+      "icon": "./assets/icon.png"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "2865acee-817d-414e-bccf-c84302b397a5"
+      },
+      "googleClientId": {
+        "android": "267826938859-topi0d8jp5uju6522fb2mmrvn2ubff7r.apps.googleusercontent.com",
+        "web": "267826938859-r2k0e8r50cl06vvru9m4kvgsm2mvq0k1.apps.googleusercontent.com"
+      }
+    },
+    "scheme": "exp"
   }
 }
